@@ -1,0 +1,271 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta http-equiv="content-type" content="text/html; charset=utf-8"/>
+	<title></title>
+	<meta name="generator" content="LibreOffice 7.3.7.2 (Linux)"/>
+	<meta name="created" content="2024-07-18T11:56:10.945789210"/>
+	<meta name="changed" content="2024-07-18T12:04:40.551953074"/>
+	<style type="text/css">
+		@page { size: 21.59cm 27.94cm; margin: 2cm }
+		p { line-height: 115%; margin-bottom: 0.25cm; background: transparent }
+	</style>
+</head>
+<body lang="en-IN" link="#000080" vlink="#800000" dir="ltr"><p style="line-height: 100%; margin-bottom: 0cm">
+&lt;!DOCTYPE html&gt;</p>
+<p style="line-height: 100%; margin-bottom: 0cm">&lt;html lang=&quot;en&quot;&gt;</p>
+<p style="line-height: 100%; margin-bottom: 0cm">&lt;head&gt;</p>
+<p style="line-height: 100%; margin-bottom: 0cm">  &lt;meta
+charset=&quot;UTF-8&quot;&gt;</p>
+<p style="line-height: 100%; margin-bottom: 0cm">  &lt;meta
+name=&quot;viewport&quot; content=&quot;width=device-width,
+initial-scale=1.0&quot;&gt;</p>
+<p style="line-height: 100%; margin-bottom: 0cm">  &lt;title&gt;Truncate
+Lines Example&lt;/title&gt;</p>
+<p style="line-height: 100%; margin-bottom: 0cm">  &lt;style&gt;</p>
+<p style="line-height: 100%; margin-bottom: 0cm">    .truncate-lines
+{</p>
+<p style="line-height: 100%; margin-bottom: 0cm">      display:
+block;</p>
+<p style="line-height: 100%; margin-bottom: 0cm">      max-width:
+550px;</p>
+<p style="line-height: 100%; margin-bottom: 0cm">      margin: 0 auto
+2rem;</p>
+<p style="line-height: 100%; margin-bottom: 0cm">      padding: 2rem;</p>
+<p style="line-height: 100%; margin-bottom: 0cm">      border-radius:
+6px;</p>
+<p style="line-height: 100%; margin-bottom: 0cm">      box-shadow:
+rgba(50, 50, 93, 0.25) 0px 13px 27px -5px, rgba(0, 0, 0, 0.3) 0px 8px
+16px -8px;</p>
+<p style="line-height: 100%; margin-bottom: 0cm">    }</p>
+<p style="line-height: 100%; margin-bottom: 0cm"><br/>
+
+</p>
+<p style="line-height: 100%; margin-bottom: 0cm">   
+.truncate-lines__clamp {</p>
+<p style="line-height: 100%; margin-bottom: 0cm">      box-sizing:
+border-box;</p>
+<p style="line-height: 100%; margin-bottom: 0cm">      display:
+-webkit-box;</p>
+<p style="line-height: 100%; margin-bottom: 0cm">     
+-webkit-box-orient: vertical;</p>
+<p style="line-height: 100%; margin-bottom: 0cm">      max-height:
+var(--truncate-height, auto);</p>
+<p style="line-height: 100%; margin-bottom: 0cm">      overflow:
+hidden;</p>
+<p style="line-height: 100%; margin-bottom: 0cm">      transition:
+max-height 0.3s ease;</p>
+<p style="line-height: 100%; margin-bottom: 0cm">    }</p>
+<p style="line-height: 100%; margin-bottom: 0cm"><br/>
+
+</p>
+<p style="line-height: 100%; margin-bottom: 0cm">   
+.truncate-lines--line-clamped .truncate-lines__clamp {</p>
+<p style="line-height: 100%; margin-bottom: 0cm">     
+-webkit-line-clamp: var(--truncate-line-clamp, none);</p>
+<p style="line-height: 100%; margin-bottom: 0cm">    }</p>
+<p style="line-height: 100%; margin-bottom: 0cm"><br/>
+
+</p>
+<p style="line-height: 100%; margin-bottom: 0cm">   
+.truncate-lines--expanded .truncate-lines__clamp {</p>
+<p style="line-height: 100%; margin-bottom: 0cm">      max-height:
+var(--truncate-height-expanded, auto);</p>
+<p style="line-height: 100%; margin-bottom: 0cm">    }</p>
+<p style="line-height: 100%; margin-bottom: 0cm"><br/>
+
+</p>
+<p style="line-height: 100%; margin-bottom: 0cm">   
+.truncate-lines__expand {</p>
+<p style="line-height: 100%; margin-bottom: 0cm">      display:
+inline-block;</p>
+<p style="line-height: 100%; margin-bottom: 0cm">      margin-top:
+0.5rem;</p>
+<p style="line-height: 100%; margin-bottom: 0cm">      padding: 0;</p>
+<p style="line-height: 100%; margin-bottom: 0cm">      border: 0;</p>
+<p style="line-height: 100%; margin-bottom: 0cm">      color: blue;</p>
+<p style="line-height: 100%; margin-bottom: 0cm">      background:
+none;</p>
+<p style="line-height: 100%; margin-bottom: 0cm">      cursor:
+pointer;</p>
+<p style="line-height: 100%; margin-bottom: 0cm">    }</p>
+<p style="line-height: 100%; margin-bottom: 0cm">  &lt;/style&gt;</p>
+<p style="line-height: 100%; margin-bottom: 0cm">&lt;/head&gt;</p>
+<p style="line-height: 100%; margin-bottom: 0cm">&lt;body&gt;</p>
+<p style="line-height: 100%; margin-bottom: 0cm"><br/>
+
+</p>
+<p style="line-height: 100%; margin-bottom: 0cm">&lt;div
+class=&quot;truncate-lines&quot; style=&quot;--truncate-line-clamp:
+5;&quot;&gt;</p>
+<p style="line-height: 100%; margin-bottom: 0cm">  &lt;div
+class=&quot;truncate-lines__clamp&quot;&gt;</p>
+<p style="line-height: 100%; margin-bottom: 0cm">    &lt;h2&gt;First
+box&lt;/h2&gt;</p>
+<p style="line-height: 100%; margin-bottom: 0cm">    &lt;p&gt;Lorem
+ipsum dolor sit amet, consectetur adipiscing elit. Proin ac magna
+tellus. Curabitur sed faucibus leo. Vivamus id elit nec nisi ultrices
+rutrum. Sed ornare metus sit amet arcu pulvinar feugiat. Phasellus
+eleifend, dolor vitae malesuada dignissim, diam ligula semper purus,
+id pulvinar magna nibh nec neque. Ut auctor sodales dictum. Cras erat
+tortor, vestibulum et porttitor vitae, consequat et erat. Nullam
+ullamcorper tempor leo in fermentum. Curabitur ultrices tempus
+pulvinar. Proin a finibus odio. Pellentesque nec urna id ex facilisis
+dictum. Proin elementum cursus dolor, in molestie sem fermentum
+eget.&lt;/p&gt;</p>
+<p style="line-height: 100%; margin-bottom: 0cm"><br/>
+
+</p>
+<p style="line-height: 100%; margin-bottom: 0cm">    &lt;p&gt;In
+rutrum id eros sed tincidunt. Vivamus lobortis orci id orci
+elementum, eget molestie ante varius. Pellentesque imperdiet accumsan
+ipsum, vitae auctor lacus. Praesent sit amet imperdiet neque. Integer
+in orci ligula. Nulla finibus interdum sapien tincidunt vestibulum.
+Cras id risus eu nisl scelerisque faucibus. Donec tellus nibh,
+convallis eu nisi a, tempus sollicitudin elit. Cras lorem mauris,
+ullamcorper ac arcu a, sodales accumsan ex. Aliquam luctus lacinia
+nisi, id tincidunt tortor aliquam vestibulum. Fusce faucibus, felis
+id consectetur tempor, felis nunc bibendum nunc, sit amet porttitor
+erat ex quis tortor. Nulla mattis eros interdum dictum aliquet.&lt;/p&gt;</p>
+<p style="line-height: 100%; margin-bottom: 0cm"><br/>
+
+</p>
+<p style="line-height: 100%; margin-bottom: 0cm">    &lt;p&gt;Nunc at
+nisi ac dolor egestas tempus. Aenean ornare nibh risus. Nulla
+tristique eu tellus sed interdum. Duis eu ligula sed orci venenatis
+elementum. Nullam ullamcorper tellus a ultrices sollicitudin.
+Maecenas lacinia augue velit, a sodales libero feugiat sed. Sed
+mauris nisl, dignissim at placerat sed, aliquet vel dolor. Aliquam
+erat volutpat.&lt;/p&gt;</p>
+<p style="line-height: 100%; margin-bottom: 0cm">  &lt;/div&gt;</p>
+<p style="line-height: 100%; margin-bottom: 0cm">  &lt;button
+type=&quot;button&quot; class=&quot;truncate-lines__expand&quot;&gt;Read
+all +&lt;/button&gt;</p>
+<p style="line-height: 100%; margin-bottom: 0cm">&lt;/div&gt;</p>
+<p style="line-height: 100%; margin-bottom: 0cm"><br/>
+
+</p>
+<p style="line-height: 100%; margin-bottom: 0cm">&lt;div
+class=&quot;truncate-lines&quot; style=&quot;--truncate-line-clamp:
+3;&quot;&gt;</p>
+<p style="line-height: 100%; margin-bottom: 0cm">  &lt;div
+class=&quot;truncate-lines__clamp&quot;&gt;</p>
+<p style="line-height: 100%; margin-bottom: 0cm">    &lt;h2&gt;Second
+box&lt;/h2&gt;</p>
+<p style="line-height: 100%; margin-bottom: 0cm">    &lt;p&gt;Lorem
+ipsum dolor sit amet, consectetur adipiscing elit. Proin ac magna
+tellus. Curabitur sed faucibus leo. Vivamus id elit nec nisi ultrices
+rutrum. Sed ornare metus sit amet arcu pulvinar feugiat. Phasellus
+eleifend, dolor vitae malesuada dignissim, diam ligula semper purus,
+id pulvinar magna nibh nec neque. Ut auctor sodales dictum. Cras erat
+tortor, vestibulum et porttitor vitae, consequat et erat. Nullam
+ullamcorper tempor leo in fermentum. Curabitur ultrices tempus
+pulvinar. Proin a finibus odio. Pellentesque nec urna id ex facilisis
+dictum. Proin elementum cursus dolor, in molestie sem fermentum
+eget.&lt;/p&gt;</p>
+<p style="line-height: 100%; margin-bottom: 0cm"><br/>
+
+</p>
+<p style="line-height: 100%; margin-bottom: 0cm">    &lt;p&gt;In
+rutrum id eros sed tincidunt. Vivamus lobortis orci id orci
+elementum, eget molestie ante varius. Pellentesque imperdiet accumsan
+ipsum, vitae auctor lacus. Praesent sit amet imperdiet neque. Integer
+in orci ligula. Nulla finibus interdum sapien tincidunt vestibulum.
+Cras id risus eu nisl scelerisque faucibus. Donec tellus nibh,
+convallis eu nisi a, tempus sollicitudin elit. Cras lorem mauris,
+ullamcorper ac arcu a, sodales accumsan ex. Aliquam luctus lacinia
+nisi, id tincidunt tortor aliquam vestibulum. Fusce faucibus, felis
+id consectetur tempor, felis nunc bibendum nunc, sit amet porttitor
+erat ex quis tortor. Nulla mattis eros interdum dictum aliquet.&lt;/p&gt;</p>
+<p style="line-height: 100%; margin-bottom: 0cm"><br/>
+
+</p>
+<p style="line-height: 100%; margin-bottom: 0cm">    &lt;p&gt;Nunc at
+nisi ac dolor egestas tempus. Aenean ornare nibh risus. Nulla
+tristique eu tellus sed interdum. Duis eu ligula sed orci venenatis
+elementum. Nullam ullamcorper tellus a ultrices sollicitudin.
+Maecenas lacinia augue velit, a sodales libero feugiat sed. Sed
+mauris nisl, dignissim at placerat sed, aliquet vel dolor. Aliquam
+erat volutpat.&lt;/p&gt;</p>
+<p style="line-height: 100%; margin-bottom: 0cm">  &lt;/div&gt;</p>
+<p style="line-height: 100%; margin-bottom: 0cm">  &lt;button
+type=&quot;button&quot; class=&quot;truncate-lines__expand&quot;&gt;Read
+all +&lt;/button&gt;</p>
+<p style="line-height: 100%; margin-bottom: 0cm">&lt;/div&gt;</p>
+<p style="line-height: 100%; margin-bottom: 0cm"><br/>
+
+</p>
+<p style="line-height: 100%; margin-bottom: 0cm">&lt;div
+class=&quot;truncate-lines&quot; style=&quot;--truncate-line-clamp:
+7;&quot;&gt;</p>
+<p style="line-height: 100%; margin-bottom: 0cm">  &lt;div
+class=&quot;truncate-lines__clamp&quot;&gt;</p>
+<p style="line-height: 100%; margin-bottom: 0cm">    &lt;h2&gt;Third
+box&lt;/h2&gt;</p>
+<p style="line-height: 100%; margin-bottom: 0cm">    &lt;p&gt;Lorem
+ipsum dolor sit amet, consectetur adipiscing elit. Proin ac magna
+tellus. Curabitur sed faucibus leo. Vivamus id elit nec nisi ultrices
+rutrum. Sed ornare metus sit amet arcu pulvinar feugiat. Phasellus
+eleifend, dolor vitae malesuada dignissim, diam ligula semper purus,
+id pulvinar magna nibh nec neque. Ut auctor sodales dictum. Cras erat
+tortor, vestibulum et porttitor vitae, consequat et erat. Nullam
+ullamcorper tempor leo in fermentum. Curabitur ultrices tempus
+pulvinar. Proin a finibus odio. Pellentesque nec urna id ex facilisis
+dictum. Proin elementum cursus dolor, in molestie sem fermentum
+eget.&lt;/p&gt;</p>
+<p style="line-height: 100%; margin-bottom: 0cm"><br/>
+
+</p>
+<p style="line-height: 100%; margin-bottom: 0cm">    &lt;p&gt;In
+rutrum id eros sed tincidunt. Vivamus lobortis orci id orci
+elementum, eget molestie ante varius. Pellentesque imperdiet accumsan
+ipsum, vitae auctor lacus. Praesent sit amet imperdiet neque. Integer
+in orci ligula. Nulla finibus interdum sapien tincidunt vestibulum.
+Cras id risus eu nisl scelerisque faucibus. Donec tellus nibh,
+convallis eu nisi a, tempus sollicitudin elit. Cras lorem mauris,
+ullamcorper ac arcu a, sodales accumsan ex. Aliquam luctus lacinia
+nisi, id tincidunt tortor aliquam vestibulum. Fusce faucibus, felis
+id consectetur tempor, felis nunc bibendum nunc, sit amet porttitor
+erat ex quis tortor. Nulla mattis eros interdum dictum aliquet.&lt;/p&gt;</p>
+<p style="line-height: 100%; margin-bottom: 0cm"><br/>
+
+</p>
+<p style="line-height: 100%; margin-bottom: 0cm">    &lt;p&gt;Nunc at
+nisi ac dolor egestas tempus. Aenean ornare nibh risus. Nulla
+tristique eu tellus sed interdum. Duis eu ligula sed orci venenatis
+elementum. Nullam ullamcorper tellus a ultrices sollicitudin.
+Maecenas lacinia augue velit, a sodales libero feugiat sed. Sed
+mauris nisl, dignissim at placerat sed, aliquet vel dolor. Aliquam
+erat volutpat.&lt;/p&gt;</p>
+<p style="line-height: 100%; margin-bottom: 0cm">  &lt;/div&gt;</p>
+<p style="line-height: 100%; margin-bottom: 0cm">  &lt;button
+type=&quot;button&quot; class=&quot;truncate-lines__expand&quot;&gt;Read
+all +&lt;/button&gt;</p>
+<p style="line-height: 100%; margin-bottom: 0cm">&lt;/div&gt;</p>
+<p style="line-height: 100%; margin-bottom: 0cm"><br/>
+
+</p>
+<p style="line-height: 100%; margin-bottom: 0cm">&lt;script&gt;</p>
+<p style="line-height: 100%; margin-bottom: 0cm"> 
+document.querySelectorAll('.truncate-lines__expand').forEach(button
+=&gt; {</p>
+<p style="line-height: 100%; margin-bottom: 0cm">   
+button.addEventListener('click', () =&gt; {</p>
+<p style="line-height: 100%; margin-bottom: 0cm">      const
+container = button.closest('.truncate-lines');</p>
+<p style="line-height: 100%; margin-bottom: 0cm">     
+container.classList.toggle('truncate-lines--expanded');</p>
+<p style="line-height: 100%; margin-bottom: 0cm">     
+button.textContent =
+container.classList.contains('truncate-lines--expanded') ? 'Read less
+-' : 'Read all +';</p>
+<p style="line-height: 100%; margin-bottom: 0cm">    });</p>
+<p style="line-height: 100%; margin-bottom: 0cm">  });</p>
+<p style="line-height: 100%; margin-bottom: 0cm">&lt;/script&gt;</p>
+<p style="line-height: 100%; margin-bottom: 0cm"><br/>
+
+</p>
+<p style="line-height: 100%; margin-bottom: 0cm">&lt;/body&gt;</p>
+<p style="line-height: 100%; margin-bottom: 0cm">&lt;/html&gt;</p>
+</body>
+</html>

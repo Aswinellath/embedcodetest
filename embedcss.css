@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta http-equiv="content-type" content="text/html; charset=utf-8"/>
+	<title></title>
+	<meta name="generator" content="LibreOffice 7.3.7.2 (Linux)"/>
+	<meta name="created" content="2024-07-18T12:05:05.830462482"/>
+	<meta name="changed" content="2024-07-18T12:07:02.373539561"/>
+</head>
+<body lang="en-IN" dir="ltr"><p>*, :after, :before {</p>
+<p>  box-sizing: border-box;</p>
+<p>}</p>
+<p><br/>
+<br/>
+
+</p>
+<p>body {</p>
+<p>  margin: 0;</p>
+<p>  padding: 2rem;</p>
+<p>  font-family: sans-serif;</p>
+<p>}</p>
+<p><br/>
+<br/>
+
+</p>
+<p>truncate-lines &gt; :first-child {</p>
+<p>  margin-top: 0;</p>
+<p>}</p>
+</body>
+</html>
